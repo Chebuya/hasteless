@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish
-        uses: Chebuya/wrangler-rs-action@0.0.1
+        uses: Chebuya/wrangler-rs-action@0.0.3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
