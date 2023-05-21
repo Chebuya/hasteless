@@ -11,8 +11,8 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v3
-      - name: Publish
-        uses: Chebuya/wrangler-rs-action@0.0.2
+      - name: Deploy
+        uses: Chebuya/wrangler-rs-action@0.0.1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         env:
