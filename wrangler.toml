@@ -1,0 +1,13 @@
+name = "hasteless"
+main = "build/worker/shim.mjs"
+compatibility_date = "2023-03-22"
+
+kv_namespaces = [
+  { binding = "HASTE_POSTS", id = "2324f14560404c13a69bf3dac357b704", preview_id = "7c88af4bdce54d7582f1ecfffeebfdda" }
+]
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+[triggers]
+crons = ["*/30 * * * *"]
