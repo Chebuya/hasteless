@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Publish
-        uses: Chebuya/wrangler-rs-action@0.0.3
+        uses: Chebuya/wrangler-rs-action@0.0.4
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
         env:
